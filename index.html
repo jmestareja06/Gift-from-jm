@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Julianne</title>
+    <link type="image/png" rel="icon" href="assets/img/icon.png">    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <audio id="myAudio" controls autoplay loop style="display: none;">
+        <source src="assets/sounds/My Love Mine All Mine instrumental.mp3" type="audio/mp3">
+      </audio>
+
+
+
+    <div class="container">
+        <div class="gift" onclick="playAudio()" onchange="playAudio()">
+            <div class="envelope">
+                <div class="card">
+                    <div class="text">
+                        <div id="scrolltext">Scroll down po😊</div>
+                        <p>Haluu, it'z me hehe,I know medyo weird but i just want give you a small gift for now, even though it's just a web code. I may not come bearing traditional gifts like chocolates or flowers at this moment. Please accept this message as a token of my affection and interest.
+                            sorry agad sa grammar ko :'>
+                            Uhmm I want you to know that I am wholeheartedly willing to invest time and effort, despite our brief acquaintance, because i want to know more about you and i want to make you trust again. I want to make you feel that the love i will give you is real. Don't worry i don't rush thingz. I'll wait for you. Here's to a day filled with promise.<br>From: Jm😊</p>
+                    </div>
+                </div>
+            </div>
+            <div class="front"></div>
+        </div>
+    </div>
+
+    <div id="snowfall">
+        <div class="snow"></div>
+        <div class="snow1"></div>
+        <div class="snow2"></div>
+    </div>
+
+    <div class="content">
+        <div class="hearts" style="filter: blur(2px);">
+            <div class="heart1"><img src="assets/img/heart.png" alt="heart"></div>
+            <div class="heart2"><img src="assets/img/heart.png" alt="heart"></div>
+            <div class="heart3"><img src="assets/img/heart.png" alt="heart"></div>
+            <div class="heart4"><img src="assets/img/heart.png" alt="heart"></div>
+            <div class="heart6"><img src="assets/img/heart.png" alt="heart"></div>
+            <div class="heart7"><img src="assets/img/heart.png" alt="heart"></div>
+            <div class="heart8"><img src="assets/img/heart.png" alt="heart"></div>
+            <div class="heart9"><img src="assets/img/heart.png" alt="heart"></div>
+            <div class="heart10"><img src="assets/img/heart.png" alt="heart"></div>
+            <div class="heart11"><img src="assets/img/heart.png" alt="heart"></div>
+        </div>
+    </div>
+    <div id="tulips">
+        <img src="assets/img/pink_tulip.png" id="tulip">
+        <img src="assets/img/pink_tulip1.png"id="tulip1">
+    </div>
+</body>
+<script>
+    var audio = document.getElementById("myAudio");
+
+// Function to play the audio
+function playAudio() {
+  audio.play();
+}
+
+// Function to reduce the volume
+function reduceVolume() {
+  audio.volume = 1.0; // You can adjust this value (0.0 to 1.0)
+}
+
+// Call the playAudio function when the page loads
+window.onload = function() {
+  playAudio();
+  reduceVolume(); // Call reduceVolume function when the page loads
+};
+</script>
+</html>
